@@ -17,7 +17,7 @@ body {
 /* Header Styling */
 header {
     text-align: center;
-    background-color: #131cd2;
+    background: linear-gradient(to right, #7dacd8, #1a84c2);
     color: #fff;
     padding: 30px 20px;
     margin-bottom: 30px;
@@ -51,7 +51,7 @@ main {
 .project h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #131cd2;
+    color: blue;
 }
 
 .project p {
@@ -84,7 +84,7 @@ footer {
     text-align: center;
     margin-top: 30px;
     padding: 15px;
-    background-color: #131cd2;
+    background-color: blue;
     color: #fff;
     border-radius: 10px;
 }
