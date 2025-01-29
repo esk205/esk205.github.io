@@ -21,8 +21,50 @@ header {
     color: #fff;
     padding: 30px 20px;
     margin-bottom: 30px;
-}
+    h3 {
+       text-align: left;
+       display: flex;
+       align-items: center; /* Align items vertically */
+       gap: 5px; /* Space between text and the image */
+    }
+    h3 img {
+        display: inline-flex;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        width: 60px; /* Adjust to desired size */
+        height: 50px; /* Ensure it's a square */
+        border-radius: 50%;
+    }
+    h2 {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff; /* Text color set to white */
+        background-color: #131cd2;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    h2:hover {
+        background-color: rgb(34, 139, 230);
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    h2 a {
+        color: #fff; /* Ensure text inside links is white */
+        text-decoration: none; /* Removes underline from links */
+    }
+    
+    h2 a:hover {
+        text-decoration: underline; /* Adds underline on hover */
+    }
 
+    
+}
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -51,7 +93,7 @@ main {
 .project h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: blue;
+    color: black;
 }
 
 .project p {
@@ -71,12 +113,14 @@ main {
 }
 
 .project a:hover {
-    background-color: #131cd2;
+    background-color: rgb(34, 139, 230);
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    
 }
 
 /* Footer Styling */
@@ -111,3 +155,24 @@ footer p {
         font-size: 0.9rem;
     }
 }
+
+header {
+    position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
