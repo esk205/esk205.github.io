@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(to bottom, #000005, #2a2a40);
     color: #333;
     line-height: 1.6;
     padding: 0 20px;
@@ -21,6 +21,7 @@ header {
     color: #fff;
     padding: 30px 20px;
     margin-bottom: 30px;
+    border-radius: 20px; /* Adjust the value to control the roundness */
     h3 {
        text-align: left;
        display: flex;
