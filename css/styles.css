@@ -172,7 +172,56 @@ header {
 }
 
 .social-icons img {
-    width: 40px; /* Adjust size as needed */
+    width: 50px; /* Adjust size as needed */
     height: auto;
+}
+
+/* Ensure header has a flex container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Prevent social icons from overlapping */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensure header content takes up available space */
+.header-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Style navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        order: -1; /* Move to top */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 
