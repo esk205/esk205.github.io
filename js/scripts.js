@@ -15,5 +15,5 @@ function showPopup(message) {
     setTimeout(() => {
         popup.classList.add("fade-out");
         setTimeout(() => popup.remove(), 500);
-    }, 1500);
+    }, 3000);
 }
