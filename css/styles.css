@@ -68,11 +68,11 @@ header {
     margin-bottom: 30px;
     border-radius: 20px; /* Adjust the value to control the roundness */
     h3 {
-       text-align: left;
-       display: flex;
-       align-items: center; /* Align items vertically */
-       gap: 5px; /* Space between text and the image */
+        text-align: left;
+        display: flex;
+        align-items: center; /* Align items vertically */ 
     }
+    
     h3 img {
         display: inline-flex;
         text-decoration: none;
@@ -244,6 +244,7 @@ header {
 .header-content {
     flex: 1;
     text-align: center;
+    margin-top: 10px;
 }
 
 /* Style navigation links */
