@@ -59,8 +59,6 @@ body {
     }
 }
 
-
-
 /* Header Styling */
 header {
     text-align: center;
@@ -273,4 +271,23 @@ nav {
         gap: 5px;
     }
 }
+
+.popup-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f8f6f6;
+    color: rgb(12, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup-message.fade-out {
+    opacity: 0;
+}
+
 
